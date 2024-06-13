@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #928e8e;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #0f037a;
+    font-size: xx-large;
+}
+.nav-links li a:hover{
+    color: red;
+    
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+}
+
+.content {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+/* Existing CSS styles */
+
+.services-popup {
+    position: absolute;
+    display: none;
+    
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.services-popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-popup li {
+    margin: 5px 0;
+}
+.services-popup li:hover {
+    background-color: #aca9ca;
+}
+
+.services-tab:hover .services-popup {
+    display: block;
+}
+
+/* Existing CSS styles */
+
